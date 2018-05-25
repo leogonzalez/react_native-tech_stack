@@ -8,12 +8,13 @@ import LibraryList from './components/LibraryList'
 
 const store = createStore(reducers);
 
+// flex:1 on view is so components fills the entire space
+
 class App extends Component {
   state = {};
   render() {
     return (
       <Provider store={store}>
-        // flex:1 on view is so components fills the entire spaece
         <View style={{flex:1}}>
           <Header headerText="Tech Stack" />
           <Text>App</Text>
