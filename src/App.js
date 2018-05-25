@@ -13,7 +13,8 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <View>
+        // flex:1 on view is so components fills the entire spaece
+        <View style={{flex:1}}>
           <Header headerText="Tech Stack" />
           <Text>App</Text>
           <LibraryList />
